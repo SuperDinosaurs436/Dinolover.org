@@ -2,10 +2,13 @@
   "name": "dino-lovers",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://SuperDinosaurs436.github.io/dino-lovers",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,16 +19,9 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.15",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.3",
     "vite": "^5.5.0"
   }
-}
-"homepage": "https://superdinosaurs436.github.io/dino-lovers",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
 }
